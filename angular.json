@@ -88,9 +88,12 @@
               "src/assets"
             ],
             "styles": [
+              
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+
+            ]
           }
         },
         "lint": {
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tdf"
+    }
+  },
+  "defaultProject": "tdf",
+  "cli": {
+    "analytics": "0aa167ec-6523-4e5d-aed7-e34938441edd"
+  }
 }
