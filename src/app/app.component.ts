@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { User } from './user';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,11 +8,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent implements OnInit {
 
-  public fullName;
-  public username;
-  public email;
-  public phonenumber;
+
   public topics=["apple","mago","orange"]
+
+userModel = new User ('Rob','rob@test.com', 55666666, 'apple', 'morning', true)
 
   constructor(){}
  ngOnInit() {
