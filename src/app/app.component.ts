@@ -10,8 +10,19 @@ export class AppComponent implements OnInit {
 
 
   public topics=["apple","mago","orange"]
+  topicHasError= true;
 
-userModel = new User ('Rob','rob@test.com', 55666666, 'apple', 'morning', true)
+     userModel = new User ('bob','rob@test.com',5566666699, 'default', 'morning', true)
+
+     validateTopic(value)
+     {
+        if(value==="default")
+        {
+          this.topicHasError= true;
+        }else{
+          this.topicHasError= false;
+        }
+     }
 
   constructor(){}
  ngOnInit() {
